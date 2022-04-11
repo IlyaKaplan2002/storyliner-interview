@@ -42,7 +42,6 @@ const getRelatedUsers = (user, nets) => {
 
 const getCount = (users, nets) => {
   const relatedUsers = users.map(({ name }) => getRelatedUsers(name, nets));
-  console.log("relatedUsers", relatedUsers);
 
   const groups = [relatedUsers[0]];
 
